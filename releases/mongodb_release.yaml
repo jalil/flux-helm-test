@@ -12,3 +12,5 @@
       imagePullPolicy: IfNotPresent
       persistence:
         enabled: false
+
+
