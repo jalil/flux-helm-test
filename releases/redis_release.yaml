@@ -1,14 +1,14 @@
 ---
-  apiVersion: helm.integrations.flux.weave.works/v1alpha2
-  kind: FluxHelmRelease
-  metadata:
-    name: redis
-    namespace: redis
-  spec:
-    chartGitPath: redis
-    releaseName: redis
-    values:
-      image:  bitnami/redis:4.0.11
-      imagePullPolicy: Always
-
-
+apiVersion: helm.integrations.flux.weave.works/v1alpha2
+kind: HelmRelease
+metadata:
+  name: rabbit
+  namespace: rabbit
+spec:
+  releaseName: rabbitmq
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: rabbitmq
+    version: 3.3.6
+  values:
+    replicas: 1
