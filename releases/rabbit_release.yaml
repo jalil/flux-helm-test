@@ -1,0 +1,14 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: rabbit
+  namespace: rabbit
+spec:
+  releaseName: rabbitmq
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: rabbitmq
+    version: 3.3.6
+  values:
+    replicas: 1
