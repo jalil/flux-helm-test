@@ -6,4 +6,10 @@
     namespace: redis
   spec:
     chartGitPath: redis
-    releaseName: redis-test
+    releaseName: redis
+    values:
+      registry: docker.io
+      image:  bitnami/redis:4.0.11
+      imagePullPolicy: Always
+
+
