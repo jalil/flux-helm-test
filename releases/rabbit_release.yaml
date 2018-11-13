@@ -8,6 +8,7 @@
     chartGitPath: rabbitmq
     releaseName: rabbitmq
     values:
+      registry: docker.io
       image: bitnami/rabbitmq:3.7.8
       imagePullPolicy: IfNotPresent
       persistence:
