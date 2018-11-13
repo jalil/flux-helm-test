@@ -2,14 +2,14 @@
   apiVersion: helm.integrations.flux.weave.works/v1alpha2
   kind: FluxHelmRelease
   metadata:
-    name: rabbitmq
+    name: mongodb
     namespace: rabbitmq
   spec:
-    chartGitPath: rabbitmq
-    releaseName: rabbitmq
-    values:
-      image: bitnami/rabbitmq:3.7.8
-      imagePullPolicy: IfNotPresent
+    chartGitPath: mongodb
+    releaseName: mongodb-test
+#    values:
+#      image: bitnami/rabbitmq:3.7.8
+#      imagePullPolicy: IfNotPresent
 
 
 
