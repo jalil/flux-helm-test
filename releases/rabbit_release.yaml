@@ -1,0 +1,18 @@
+---
+  apiVersion: helm.integrations.flux.weave.works/v1alpha2
+  kind: FluxHelmRelease
+  metadata:
+    name: rabbitmq
+    namespace: rabbit
+  spec:
+    chartGitPath: rabbitmq
+    releaseName: rabbitmq
+    values:
+      image: bitnami/rabbitmq:3.7.8
+      imagePullPolicy: IfNotPresent
+      persistence:
+        enabled: false
+
+
+
+
