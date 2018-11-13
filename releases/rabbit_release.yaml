@@ -3,7 +3,7 @@
   kind: FluxHelmRelease
   metadata:
     name: rabbitmq
-    namespace: rabbit
+    namespace: rabbitmq
   spec:
     chartGitPath: rabbitmq
     releaseName: rabbitmq
