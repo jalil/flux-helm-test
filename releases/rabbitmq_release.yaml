@@ -3,13 +3,10 @@
   kind: FluxHelmRelease
   metadata:
     name: mongodb
-    namespace: rabbitmq
+    namespace: jalil-test01
   spec:
     chartGitPath: mongodb
     releaseName: mongodb-test
-#    values:
-#      image: bitnami/rabbitmq:3.7.8
-#      imagePullPolicy: IfNotPresent
 
 
 
