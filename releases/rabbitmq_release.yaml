@@ -7,5 +7,9 @@
   spec:
     chartGitPath: rabbitmq
     releaseName: rabbitmq
+    values:
+      image: bitnami/rabbitmq:3.7.8
+      imagePullPolicy: IfNotPresent
+
 
 
