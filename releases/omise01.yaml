@@ -1,0 +1,19 @@
+---
+  apiVersion: helm.integrations.flux.weave.works/v1alpha2
+  kind: FluxHelmRelease
+  metadata:
+    name: omise01
+    namespace: omise01
+  spec:
+    chartGitPath: omise01
+    releaseName: omise01
+    values:
+      registry: docker.io
+      image: bitnami/rabbitmq:3.7.8
+      imagePullPolicy: IfNotPresent
+      persistence:
+        enabled: false
+
+
+
+
