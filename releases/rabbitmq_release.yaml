@@ -8,10 +8,7 @@
     chartGitPath: mongodb
     releaseName: mongodb-test
     values:
-      image: bitnami/mongodb:3.7.1-r1
-      imagePullPolicy: IfNotPresent
-      persistence:
-        enabled: false
+      image:{}
 
 
 
